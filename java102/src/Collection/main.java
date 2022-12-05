@@ -90,7 +90,26 @@ public class main {
         System.out.println("poll() : " + queue.poll());
         System.out.println("peek() : " + queue.peek());
 
+
+        -------------MAPS---------------------------
          */
+
+        Map<String ,String > country = new HashMap<>();
+
+        country.put("TR","Türkiye");
+        country.put("DE","Almanya");
+        country.put("ENG","İngiltere");
+
+        System.out.println(country.get("TR"));
+        System.out.println(country.size());
+        country.remove("ENG");
+
+        for (String key : country.keySet()){
+            System.out.println(country.get(key));
+        }
+        for (String value : country.values()){
+            System.out.println(value);
+        }
 
     }
 }
